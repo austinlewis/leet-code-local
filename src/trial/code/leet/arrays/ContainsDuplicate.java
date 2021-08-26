@@ -1,9 +1,10 @@
 package trial.code.leet.arrays;
 
-// https://leetcode.com/problems/contains-duplicate/
-
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+// https://leetcode.com/problems/contains-duplicate/
 
 public class ContainsDuplicate {
     public static void main(String[] args) {
@@ -15,16 +16,14 @@ public class ContainsDuplicate {
         /* using Arrays.stream
         Leetcode Submission - https://leetcode.com/submissions/detail/527707931/
         Runtime: 7 ms
-        Memory Usage: 46.4 MB
+        Memory Usage: 46.4 MB */
 
-        return Arrays.stream(nums).distinct().count() != nums.length;
-        */
+        // return Arrays.stream(nums).distinct().count() != nums.length;
 
         /* using forEach
         Leetcode Submission - https://leetcode.com/submissions/detail/527712796/
         Runtime: 4 ms
-        Memory Usage: 42.8 MB
-
+        Memory Usage: 42.8 MB */
 
         Set<Integer> uniqueValues = new HashSet<Integer>();
         for (int num : nums) {
@@ -32,7 +31,6 @@ public class ContainsDuplicate {
                 return true;
             }
         }
-        */
 
         //TODO: Why does the forEach method take less runtime compared to in-built Arrays.stream(); Is it because of the distinct(), if so how much and why?
 
