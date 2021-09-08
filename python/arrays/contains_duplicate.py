@@ -27,13 +27,13 @@ print('''
     \n\n\nEnter the Test cases:
 ''')
 
-testCases = []
+test_cases = []
 while True:
     try:
         case = [int(item) for item in input().split()]
-        testCases.append(case)
+        test_cases.append(case)
     except ValueError:
         break
 start: Solution = Solution()
-for test in testCases:
+for test in test_cases:
     print('\nTest Case: ', test,'Result: ',start.containsDuplicate(test))
