@@ -6,7 +6,7 @@ from typing import List, Set
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         '''
-            Submission:
+            Submission_1:
             https://leetcode.com/submissions/detail/551671792/
         '''
         unique: Set = set(nums)
@@ -20,16 +20,14 @@ class Solution:
         return nums
 
         '''
-            Observations
-            __contains__ is an overloader method for any userdefined class, should not be used randomnly,
-            Above code can be made more readable:
-                unique: Set = set(nums)
-                result: List[int] = []
-                for counter in range(len(nums)):
-                    if counter not in unique:
-                        result.append(counter)
-                    counter = counter+1
-                return result
+            Unsubmitted:
+            unique: Set = set(nums)
+            result: List[int] = []
+            for counter in range(len(nums)):
+                if counter not in unique:
+                    result.append(counter)
+                counter = counter+1
+            return result
         '''
 
 

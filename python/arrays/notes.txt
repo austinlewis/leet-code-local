@@ -1,0 +1,60 @@
+---
+    General
+
+    * Are the metrics of runtime & memory important? If so, Why? and, Are they reliable data in Leetcode? also, Are they different from person-to-person or submission-to-submission?
+        - 217. Submission_2 & Submission_3 were slightly modified between each other which had best time-complexity to test reliablity of a submission detail.
+    * What actually causes time-limit exceeded issue? and How is the condition tested? also, How to identify or have a forethought on solution that could lead to this scenario?
+        - using .count() - complexity is O(n)
+        - using __contains__ or in - complexity is O(n)
+
+
+---
+    217. Contains Duplicate
+    https://leetcode.com/problems/contains-duplicate/
+
+
+--- 
+    268. Missing Number
+    https://leetcode.com/problems/missing-number/
+    
+    - Submission_1
+        * Above method loops through all values time-complexity is more
+        * __contains__ is an overloader method for any userdefined class, should not be used randomnly
+        * A better approach was to calculate sum of given list and then calculate actual sum using n*(n+1)/2
+
+    - Submission_n
+        * Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?
+
+
+--- 
+    448. Find All Numbers Disappeared in an Array
+    https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+
+    - Submission_1
+        * __contains__ is an overloader method for any userdefined class, should not be used randomnly
+
+
+---
+    136. Single Number
+    https://leetcode.com/problems/single-number/
+
+    - Submission_1
+        * Above method loops through all methods time-complexity is more
+
+    - Submission_2
+        * Replacing extra count-condition with try-except for remove cut execution-time by half in leetcode
+        * A better approach was to use Bitwise-XOR, i.e., result ^= nums[i] : twice appearning digits cancel out each other while leaving the one time appearing digit in result
+
+
+---
+    238. Product of Array Except Self
+    https://leetcode.com/problems/product-of-array-except-self/
+
+    - Submission_1:
+        * Time limit exceeded
+
+    - Submission_3:
+        * Slight change from Submission_2 method looping method and use of list-compression
+
+    - Submission_n
+        * Follow up: Can you solve the problem in O(1) extra space complexity? (The output array does not count as extra space for space complexity analysis.)

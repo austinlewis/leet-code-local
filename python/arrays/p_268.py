@@ -5,17 +5,18 @@ from typing import List, Set
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         ''' 
-            Submission:
+            Submission 1:
             https://leetcode.com/submissions/detail/551598823/
         '''
         for number in range(len(nums)+1):
             if not nums.__contains__(number):
                 return number
-            
+
         '''
-            Observations:
-            Above method loops through all values time-complexity is more,
-            A better approach was to calculate sum of given list and then calculate actual sum using n*(n+1)/2
+            Submission 2:
+            cur_sum: int = sum(nums)
+            sum_value: int = sum(list(range(len(nums)+1)))
+            return sum_value - cur_sum
         '''
 
 

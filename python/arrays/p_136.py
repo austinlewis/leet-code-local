@@ -2,25 +2,33 @@
 
 from typing import List
 
+
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         '''
-            Submission:
+            Submission_1:
             https://leetcode.com/submissions/detail/551703808/
+
+            counter: int = 0
+            while(counter != len(nums)):
+                check_num: int = nums.pop(counter)
+                if nums.count(check_num) != 1:
+                    return check_num
+                nums.remove(check_num)
+        '''
+
+        '''
+            Submission_2:
+            https://leetcode.com/submissions/detail/551706295/
         '''
         counter: int = 0
         while(counter != len(nums)):
             check_num: int = nums.pop(counter)
-            if nums.count(check_num) != 1:
+            try:
+                nums.remove(check_num)
+            except ValueError:
                 return check_num
-            nums.remove(check_num)
 
-        '''
-            Above method loops through all methods time-complexity is more,
-            replacing extra count-condition with try-except for remove cut execution-time by half,
-            A better approach to use Bitwise-XOR, i.e., result ^= nums[i] : twice appearning digits cancel out each other while leaving the one time appearing digit in result
-        '''
-                
 
 print('''
     \tTest case input format

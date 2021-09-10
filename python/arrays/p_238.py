@@ -8,7 +8,7 @@ class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
 
         '''
-            Submission:
+            Submission_1:
             https://leetcode.com/submissions/detail/552136217/
 
             result: List[int] = []
@@ -17,13 +17,10 @@ class Solution:
                 copy.pop(index)
                 result.insert(index, prod(copy))
             return result
-
-            Observation:
-            This method leads to time-exceed error, why? --> the next is solution based on this but with storage 
         '''
 
         '''
-            Submission:
+            Submission_2:
             https://leetcode.com/submissions/detail/552219522/
 
             result: List[int] = []
@@ -41,7 +38,7 @@ class Solution:
         '''
 
         '''
-            Submission:
+            Submission_3:
             https://leetcode.com/submissions/detail/552219845/
         '''
         previousProduct: Dict = dict.fromkeys(nums, 0)
@@ -50,11 +47,6 @@ class Solution:
             copy.remove(key)
             previousProduct[key] = prod(copy)
         return [previousProduct.get(num) for num in nums]
-
-        '''
-            Observation:
-            Slight change from previous method looping method and use of list-compression
-        '''
 
 
 print('''

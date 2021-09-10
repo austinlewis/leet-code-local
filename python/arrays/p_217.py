@@ -1,17 +1,31 @@
 #!/usr/bin/env
-from typing import List, Set
+from typing import List
 
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         ''' 
-            Submission:
+            Submission_1:
             https://leetcode.com/submissions/detail/550779729/
         '''
         if(len(set(nums)) != len(nums)):
             return True
         else:
             return False
+
+        '''
+            Submission_2:
+            https://leetcode.com/submissions/detail/550787305/
+
+            return len(set(nums)) != len(nums)
+        '''
+
+        '''
+            Submission_3:
+            https://leetcode.com/submissions/detail/550787962/
+
+            return len(nums) != len(set(nums))
+        '''
 
 
 print('''
