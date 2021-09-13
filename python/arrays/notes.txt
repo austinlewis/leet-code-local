@@ -6,6 +6,8 @@
     * What actually causes time-limit exceeded issue? and How is the condition tested? also, How to identify or have a forethought on solution that could lead to this scenario?
         - using .count() - complexity is O(n)
         - using __contains__ or in - complexity is O(n)
+    * Does enumeration in for-loop make any difference?
+        - 73. Submission_2 uses enumeration no difference in leet-code submission details
 
 
 ---
@@ -79,4 +81,14 @@
 
 
 ---
-    
+    73. Set Matrix Zeroes
+    https://leetcode.com/problems/set-matrix-zeroes/
+
+    - Submission_2:
+        * Using enumeration in fopr-loop
+
+    - Submission_n
+        Follow up:
+        * A straightforward solution using O(mn) space is probably a bad idea.
+        * A simple improvement uses O(m + n) space, but still not the best solution.
+        * Could you devise a constant space solution?
