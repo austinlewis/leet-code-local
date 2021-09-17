@@ -4,11 +4,12 @@
     * Are the metrics of runtime & memory important? If so, Why? and, Are they reliable data in Leetcode? also, Are they different from person-to-person or submission-to-submission?
         - 217. Submission_2 & Submission_3 were slightly modified between each other which had best time-complexity to test reliablity of a submission detail.
     * What actually causes time-limit exceeded issue? and How is the condition tested? also, How to identify or have a forethought on solution that could lead to this scenario?
-        - using .count() - time complexity is O(n)
-        - using __contains__ or in - time complexity is O(n)
+        - Python Time Complexity - https://wiki.python.org/moin/TimeComplexity
+        - List using .count() - time complexity is O(n)
+        - List using __contains__ or in - time complexity is O(n)
     * Does enumeration in for-loop make any difference?
         - 73. Submission_2 uses enumeration no difference in leet-code submission details
-    * specific to python3
+    * specific to python
         - reduce usage of .sort() - time complexity O(n.logn)
         - eracdicating duplicates by creating a set - space complexity o(n) and is a good approach when space-complexity is not restricted to constant or O(1)
 
