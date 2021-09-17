@@ -89,7 +89,7 @@
     https://leetcode.com/problems/set-matrix-zeroes/
 
     - Submission_2:
-        * Using enumeration in fopr-loop
+        * Using enumeration in for-loop
 
     - Submission_n
         Follow up:
@@ -114,4 +114,13 @@
     - Submission_n:
         * You must write an algorithm that runs in O(n) time.
 
+---
+    41. First Missing Positive
+    https://leetcode.com/problems/first-missing-positive/
+
+    - Submission_2:
+        * condition to remove values less than -1 and return 1
+
+    -Submission_n:
+        * You must implement an algorithm that runs in O(n) time and uses constant extra space.
     
