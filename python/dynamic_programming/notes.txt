@@ -1,2 +1,10 @@
 ---
     General
+
+
+---
+    70. Climbing Stairs
+    https://leetcode.com/problems/climbing-stairs/
+
+    - Submission_2:
+        * solved using python3's math-factorial function, reduced run-time by a little
