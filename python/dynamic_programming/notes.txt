@@ -8,3 +8,10 @@
 
     - Submission_2:
         * solved using python3's math-factorial function, reduced run-time by a little
+
+---
+    121. Best Time to Buy and Sell Stock
+    https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
+    - Submission_2:
+        * storing price value instead of index, just a slight decrease in run-time
