@@ -1,6 +1,6 @@
 ---
     General
-
+    * 
 
 ---
     70. Climbing Stairs
@@ -15,3 +15,10 @@
 
     - Submission_2:
         * storing price value instead of index, just a slight decrease in run-time
+
+---
+    53. Maximum Subarray
+    https://leetcode.com/problems/maximum-subarray/
+
+    - Submission_n:
+        * Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
